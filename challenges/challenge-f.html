@@ -24,18 +24,17 @@
     margin: 10px 10vh;
   }
 
-  .hyperlink {
+  a {
     color: rgb(0, 113, 133);
     transition: color .15s;
   }
 
-  .hyperlink:hover {
-    color: rgb(206, 128, 11);
+  .hyperlink {
+    margin: 10px 15px;
   }
 
-  p {
-    font-size: 15px;
-    margin: 20px 15px;
+  .hyperlink:hover {
+    color: rgb(206, 128, 11);
   }
 
   .nike-heading {
@@ -43,10 +42,14 @@
   }
 
   .price-paragraph {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     color: rgb(4, 145, 4);
-    margin-bottom: 15px;
+    margin: 20px 15px 16px;
+  }
+
+  .delivery {
+    margin: 10px 15px;
   }
   
   .amazon_cart-button {
@@ -57,7 +60,7 @@
     height: 30px;
     border: none;
     border-radius: 25px;
-    margin: 7px;
+    margin: 7px 15px;
     cursor: pointer;
     transition: background-color .15s, opacity .15s;
   }
@@ -73,7 +76,7 @@
   .amazon_buy-button {
     font-size: 14px;
     color: black;
-    background-color: rgb(255, 164, 28);
+    background-color: rgb(255, 149, 28);
     width: 120px;
     height: 30px;
     border: none;
@@ -84,11 +87,56 @@
   }
 
   .amazon_buy-button:hover {
-    background-color: rgb(231, 142, 7);
+    background-color: rgb(209, 132, 15);
   }
 
   .amazon_buy-button:active {
     opacity: .7;
+  }
+
+  .challenge-5f {
+    text-align: center;
+  }
+
+  .new {
+    font-family: Arial;
+    font-size: 12px;
+    color: rgb(214, 139, 0);
+    text-align: center;
+    margin: 15px 0 6px;
+  }
+
+  .product-name {
+    font-family: Arial;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .product-heading {
+    font-family: Arial;
+    font-size: 43px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .price {
+    font-family: Arial;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .buy {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(67, 108, 221);
+    padding: 6px 15px;
+    border: none;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
   }
 </style>
 
@@ -99,9 +147,23 @@
 </figure>
 <p class="exercise">3f Change <b>a</b> and buttons hover. Also, for buttons add an <b>active</b></p>
 <hr>
-<a href="https://www.amazon.com/-/es/ref=nav_logo" target="_blank" class="hyperlink"><p>Back to Amazon</p></a>
+<a href="https://www.amazon.com/-/es/ref=nav_logo" target="_blank"><p class="hyperlink">Back to Amazon</p></a>
 <h2 class="nike-heading">Nike Black Running Shoes</h2>
 <p class="price-paragraph">$39 - in stock.</p>
-<p>Free delivery tomorrow.</p>
+<p class="delivery">Free delivery tomorrow.</p>
 <button class="amazon_cart-button">Add to Cart</button>
 <button class="amazon_buy-button">Buy now</button>
+
+<hr>
+<figure class="challenge-5f">
+  <img src="./images/5f.png" alt="5f challenge" width="500">
+  <figcaption>5f challenge</figcaption>
+</figure>
+
+<p class="new">New</p>
+<p class="product-name">MacBook Pro</p>
+<p class="product-heading">Supercharged for pros.</p>
+<p class="price">From $1999</p>
+<button class="buy">Buy</button>
+
+<hr>
