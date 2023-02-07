@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+figure {
+  text-align: center;
+}
+
+h1 {
+  font-size: 38px;
+  text-align: center;
+  margin: 12px 0 15px;
+}
+
+p {
+  font-size: 17px;
+  text-align: center;
+}
+
+span {
+  text-decoration: underline;
+}
