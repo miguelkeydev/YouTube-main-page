@@ -7,8 +7,20 @@
 .search-bar {
   font-size: 18px;
   margin-left: 0;
+  display: block;
 }
 
-.image_505-cover {
+.video-image {
   width: 300px;
+}
+
+.div-example {
+  display: inline-block;
+}
+
+.video {
+  width: 300px;
+  vertical-align: top;
+  display: inline-block;
+  margin: 5px 5px 10px 10px;
 }
