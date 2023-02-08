@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.exercise {
+  font-size: 20px;
+  color: tomato;
+  background-color: black;
+  text-align: center;
+}
+
+.name-input, .email-input {
+  margin: 5px;
+  color: rgb(165, 165, 165);
+  padding: 2px 3px;
+  border: 1px solid rgb(165, 165, 165);
+  border-radius: 3px;
+  display: block;
+}
+
+.paragraph-b {
+  font-size: 18px;
+  width: 300px;
+  margin: 5px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.button-b {
+  padding: 2px 8px;
+  vertical-align: middle;
+}
+
+.google-figure {
+  margin: 10px;
+  text-align: center;
+}
+
+.google-img {
+  width: 35vw;
+}
+
+.google-search_bar {
+  font-size: 18px;
+  padding: 10px 18px;
+  width: 70vw;
+  border: none;
+  border-radius: 30px;
+  margin: 0 auto;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, .3);
+  display: block;
+}
