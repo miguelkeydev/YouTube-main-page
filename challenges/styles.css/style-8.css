@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.exercise-title {
+  font-size: 20px;
+  color: tomato;
+  background-color: black;
+  text-align: center;
+
+}
+
+.exercise {
+  font-size: 20px;
+  color: rgb(71, 255, 246);
+  background-color: black;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.first-name, .last-name {
+  font-size: 17px;
+  padding: 12px 15px;
+  width: 20vw;
+  border: 1px solid rgba(156, 156, 156, 0.5);
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.first-name {
+  margin: 10px 0 8px 10px;
+}
+
+.last-name {
+  margin: 10px 0 8px 0;
+}
+
+.email {
+  font-size: 17px;
+  padding: 12px 15px;
+  width: 40.65vw;
+  border: 1px solid rgba(128, 128, 128, .5);
+  border-radius: 5px;
+  margin: 0 0 8px 10px;
+  display: block;
+}
+
+.sign-up {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(49, 110, 241);
+  padding: 15px;
+  text-align: center;
+  width: 40.65vw;
+  border: none;
+  margin: 0 0 10px 10px;
+  border-radius: 8px;
+}
+
+.request-text {
+  font-size: 40px;
+  margin: 10px 0 25px 10px;
+}
+
+.request-pickup, .request-destination {
+  font-size: 16px;
+  background-color: rgba(226, 226, 226, .5);
+  padding: 12px 20px;
+  width: 40vw;
+  border: none;
+  border-radius: 1px;
+  display: block;
+}
+
+.request-pickup {
+  margin: 0 0 8px 10px;
+}
+
+.request-destination {
+  margin: 0 0 25px 10px;
+}
+
+.request {
+  font-size: 17px;
+  color: white;
+  background-color: black;
+  padding: 12px 0;
+  text-align: center;
+  width: 15.5vw;
+  border: none;
+  border-radius: 1px;
+  margin: 0 15px 0 10px;
+}
+
+.schedule {
+  font-size: 17px;
+  background-color: rgba(226, 226, 226, .5);
+  padding: 12px 0;
+  text-align: center;
+  width: 18vw;
+  border: none;
+  border-radius: 1px;
+}
