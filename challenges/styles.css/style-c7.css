@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.challenge {
+  font-size: 22px;
+  color: blue;
+  text-align: center;
+}
+
+.email-text {
+  font-size: 12px;
+  color: gray;
+  margin: 7px 0 0 3px;
+}
+
+.email-textbox {
+  width: 47vw;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 3px;
+}
+
+.agree-button {
+  color: white;
+  background-color: rgb(67, 117, 226);
+  padding: 10px 17vw;
+  border: none;
+  border-radius: 25px;
+  margin: 10px 0 10px 3px;
+}
+
+figure {
+  display: inline;
+  vertical-align: middle;
+}
+
+.tw-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tw-textbox {
+  font-size: 14px;
+  width: 30vw;
+  border: none;
+}
+
+.tw-button {
+  font-weight: bold;
+  color: white;
+  padding: 5px 12px;
+  background-color: rgb(65, 154, 255);
+  border: none;
+  border-radius: 30px;
+  vertical-align: middle;
+}
