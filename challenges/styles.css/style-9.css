@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.exercise {
+  font-size: 22px;
+  color: navajowhite;
+  background-color: black;
+  margin: 10px;
+  text-align: center;
+}
+
+.exercise-figure {
+  text-align: center;
+  display: block;
+}
+
+.div-9 {
+   width: 200px;
+   border: 1px solid rgba(139, 139, 139, .3);
+   margin: 10px 5px;
+   box-shadow: 2px 2px 10px rgba(139, 139, 139, .5);
+   display: inline-block;
+}
+
+.f {
+  display: block;
+  margin: 10px auto;
+}
+
+.div_pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.div_name {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 7px 0 0px 10px;
+}
+
+.div_mutual_friends {
+  font-size: 15px;
+  color: rgba(99, 99, 99, .8);
+  margin: 0 0 8px 10px;
+}
+
+.div_add_friend {
+  font-size: 17px;
+  color: white;
+  background-color: rgb(31, 76, 226);
+  padding: 7px 15px;
+  border: none;
+  border-radius: 3px;
+  margin: 0 0 7px 10px;
+  cursor: pointer;
+}
+
+.div-9h {
+  text-align: center;
+}
+
+.google-figure {
+  margin: 20px auto 10px;
+}
+
+.google-img {
+  width: 35vw;
+}
+
+.google-search_bar {
+  font-size: 18px;
+  padding: 15px 18px;
+  width: 70vw;
+  border: none;
+  border-radius: 30px;
+  margin: 0 auto 40px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, .3);
+  display: block;
+}
+
+.div-9h_button {
+  font-size: 18px;
+  background-color: rgba(175, 175, 175, .3);
+  padding: 14px 20px;
+  border: none;
+  border-radius: 3px;
+  margin: 0 13px 30px 0;
+}
