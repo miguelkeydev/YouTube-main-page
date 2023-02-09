@@ -4,18 +4,22 @@
   box-sizing: border-box;
 }
 
+p {
+  font-family: Roboto, Arial;
+}
+
 .search-bar {
   font-size: 18px;
   margin-left: 0;
   display: block;
 }
 
-.video-image {
-  width: 300px;
+.video-figure {
+  height: 168.33px;
 }
 
-.div-example {
-  display: inline-block;
+.video-image {
+  width: 300px;
 }
 
 .video {
@@ -23,4 +27,40 @@
   vertical-align: top;
   display: inline-block;
   margin: 5px 5px 10px 10px;
+}
+
+.thumbnail-row {
+  margin-bottom: 10px;
+}
+
+.channel-picture {
+  width: 50px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.channel-picture_img {
+  width: 75%;
+  border-radius: 100%;
+}
+
+.video-info {
+  width: 200px;
+  display: inline-block;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.video-author, .video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 1px;
 }
