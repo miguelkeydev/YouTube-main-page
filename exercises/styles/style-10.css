@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.exercise {
+  font-size: 22px;
+  color: navajowhite;
+  background-color: black;
+  margin: 10px;
+  text-align: center;
+}
+
+.exercise-figure {
+  margin: 10px 0;
+  text-align: center;
+  display: block;
+}
+
+.user {
+  width: 380px;
+  height: 80px;
+  margin: 3px auto;
+}
+
+.user-img, .user-info, .user-follow {
+  display: inline-block;
+}
+
+.user-img, .user-info {
+  height: 70px;
+  vertical-align: middle;
+}
+
+.user-img {
+  margin: auto 7px auto 5px;
+}
+
+.user-figure, .user-img_profile {
+  width: 60px;
+}
+
+.user-img_profile {
+  border-radius: 100%;
+}
+
+.user-info {
+  width: 225px;
+}
+
+.user-name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.user-description, .user-standard {
+  color: rgb(119, 118, 118);
+}
+
+.user-description {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.user-standard {
+  font-size: 14px;
+}
+
+.user-follow_button {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(49, 137, 236);
+  padding: 6px 12px;
+  border: none;
+  border-radius: 3px;
+  margin: 25px 0;
+  cursor: pointer;
+}
+
+.video {
+  font-family: Roboto, Arial;
+  width: 450px;
+  margin: 5px 0 0 10px;
+  cursor: pointer;
+}
+
+.video-img, .video-info {
+  display: inline-block;
+}
+
+.video-img, .video-figure, .video-img_picture {
+  width: 190px;
+}
+
+.video-info {
+  padding: 2px 0 0 3px;
+  width: 230px;
+  vertical-align: top;
+}
+
+.video-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 23px;
+}
+
+.video-channel, .video-stats {
+  font-size: 14px;
+  color: rgb(119, 118, 118);
+}
+
+.video-channel {
+  margin-bottom: 4px;
+}
+
+.profile {
+  font-family: Roboto, Arial;
+  width: 170px;
+  padding-bottom: 8px;
+  margin: 10px 5px 100px 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+  display: inline-block;
+}
+
+.profile-fig, .profile-pic_img {
+  width: 170px;
+}
+
+.profile-pic {
+  margin-bottom: 10px;
+}
+
+.profile-info {
+  margin-left: 8px;
+}
+
+.profile-name {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.profile-friends {
+  margin-bottom: 8px;
+}
+
+.profile-friends_img, .profile-friends p {
+  vertical-align: middle;
+}
+
+.profile-friends p {
+  font-size: 14px;
+  color: rgb(119, 118, 118);
+  display: inline-block;
+}
+
+.profile-friends_img {
+  width: 20px;
+  border-radius: 100%;
+}
+
+.profile-add {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(32, 92, 221);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
