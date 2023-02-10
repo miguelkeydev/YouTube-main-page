@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.exercise {
+  font-size: 22px;
+  color: navajowhite;
+  background-color: black;
+  margin: 10px;
+  text-align: center;
+}
+
+.exercise-figure {
+  text-align: center;
+  display: block;
+}
+
+.flex-a {
+  padding: 0 10px;
+  display: flex;
+}
+
+.flex-a1 {
+  background-color: lightblue;
+  width: 200px;
+}
+
+.flex-a2 {
+  background-color: lightpink;
+  width: 75px;
+}
+
+.flex-b {
+  padding: 0 10px;
+  display: flex;
+}
+
+.flex-b1 {
+  background-color: lightblue;
+  width: 50px;
+}
+
+.flex-b2 {
+  background-color: lightpink;
+  flex: 1;
+}
+
+.flex-b3 {
+  background-color: lightblue;
+  width: 75px;
+}
+
+.flex-c {
+  padding: 0 10px;
+  display: flex;
+    justify-content: space-between;
+}
+
+.flex-c div {
+  background-color: lightblue;
+  width: 100px;
+}
+
+.flex-d {
+  height: 50px;
+  border: 1px solid gray;
+  margin: 10px;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-d1 {
+  background-color: lightblue;
+}
+
+.flex-d2 {
+  background-color: lightpink;
+}
