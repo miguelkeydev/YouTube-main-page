@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.exercise {
+  font-size: 22px;
+  color: navajowhite;
+  background-color: black;
+  margin: 10px;
+  text-align: center;
+}
+
+.exercise-figure {
+  text-align: center;
+  margin: 10px;
+  display: block;
+}
+
+.ex-a {
+  display: grid;
+    grid-template-columns: 200px 75px;
+}
+
+.ex-a1 {
+  background-color: lightcyan;
+}
+
+.ex-a2 {
+  background-color: lightgray;
+}
+
+.ex-b {
+  display: grid;
+    grid-template-columns: 50px 1fr 75px;
+}
+
+.ex-b1 {
+  background-color: lightcyan;
+}
+
+.ex-b2 {
+  background-color: lightgray;
+}
+
+.ex-b3 {
+  background-color: lightgoldenrodyellow;
+}
+
+.ex-c {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px 20px;
+}
+
+.ex-c1 {
+  background-color: lightcyan;
+}
+
+.ex-c2 {
+  background-color: lightgray;
+}
+
+.ex-c3 {
+  background-color: lightgoldenrodyellow;
+}
+
+.ex-c4 {
+  background-color: lightsalmon;
+}
+
+.profiles-grid {
+  font-family: Roboto, Arial;
+  padding: 10px 0 10px 10px;
+  display: grid;
+    grid-template-columns: 170px 170px 170px;
+    gap: 0 20px;
+}
+
+.profile {
+  padding-bottom: 8px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+}
+
+.profile-pic, .profile-pic_img {
+  width: 100%;
+}
+
+.profile-info {
+  padding-top: 10px;
+  margin-left: 8px;
+}
+
+.profile-name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.profile-friends {
+  padding-top: 6px;
+  margin-bottom: 10px;
+  display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+}
+
+.profile-friends_img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.profile-friends_img + p {
+  font-size: 14px;
+  color: rgb(119, 118, 118);
+}
+
+.profile-add {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(32, 92, 221);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
