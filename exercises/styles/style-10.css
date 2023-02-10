@@ -151,15 +151,15 @@
   vertical-align: middle;
 }
 
+.profile-friends_img {
+  width: 20px;
+  border-radius: 100%;
+}
+
 .profile-friends p {
   font-size: 14px;
   color: rgb(119, 118, 118);
   display: inline-block;
-}
-
-.profile-friends_img {
-  width: 20px;
-  border-radius: 100%;
 }
 
 .profile-add {
