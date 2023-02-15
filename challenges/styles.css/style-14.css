@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.exercise {
+  font-size: 22px;
+  color: navajowhite;
+  background-color: black;
+  margin: 10px;
+  text-align: center;
+}
+
+.exercise-figure {
+  margin: 20px;
+  text-align: center;
+  display: block;
+}
+
+.link {
+  font-size: 20px;
+  color: rgb(9, 166, 214);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.sidebar {
+  background-color: darkmagenta;
+  color: mediumaquamarine;
+  width: 150px;
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, .8);
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert {
+  background-color: white;
+  width: 90vw;
+  height: 35vh;
+  padding: 50px 40px;
+  border-radius: 40px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alert-title {
+  font-size: 60px;
+}
+
+.alert-paragraph {
+  font-size: 30px;
+  padding: 20px 0 30px;
+}
+
+.alert-close {
+  font-size: 25px;
+}
+
+.facebook {
+  background-color: whitesmoke;
+  height: 70px;
+  padding: 0 60px;
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+  width: 400px;
+  padding-left: 20px;
+  display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-img {
+  width: 50px;
+  border-radius: 100%;
+}
+
+.left-name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.right-section {
+  width: 400px;
+  display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-add, .right-message {
+  font-weight: 600;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+.right-add {
+  background-color: rgb(52, 115, 231);
+  color: white;
+}
+
+.right-message {
+  background-color: rgb(230, 230, 230);
+}
+
+.discord {
+  width: 300px;
+  position: fixed;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.discord-pics {
+  background-color: rgb(36, 36, 36);
+  width: 80px;
+  padding: 20px 0;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.discord-img {
+  width: 50px;
+  border-radius: 100%;
+}
+
+.discord-channel {
+  background-color: rgb(59, 59, 59);
+  width: 220px;
+  padding: 10px 20px;
+  display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.channel-info {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.channel-info_text {
+  font-weight: 600;
+  color: rgb(240, 240, 240);
+}
+
+.channel-info_more {
+  font-size: 30px;
+  color: rgb(150, 150, 150);
+}
+
+.channel-group {
+  color: rgb(150, 150, 150);
+  display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
