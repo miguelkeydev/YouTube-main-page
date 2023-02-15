@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.exercise {
+  font-size: 22px;
+  color: navajowhite;
+  background-color: black;
+  margin: 10px;
+  text-align: center;
+}
+
+.exercise-figure {
+  margin: 20px;
+  text-align: center;
+  display: block;
+}
+
+.clothes-cont {
+  display: flex;
+  justify-content: center;
+    gap: 100px;
+}
+
+.clothes {
+  width: 300px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.clothes-img {
+  width: 100%;
+}
+
+.sale {
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  padding: 4px 10px;
+  position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.buy {
+  background-color: rgba(255, 255, 255, .65);
+  height: 28%;
+  position: absolute;
+  right: 0;
+    bottom: 0;
+    left: 0;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart {
+  background-color: rgba(255, 255, 255, .9);
+  padding: 6px 14px;
+  border: 1px solid black;
+}
