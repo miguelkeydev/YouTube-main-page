@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.exercise {
+  font-size: 22px;
+  color: navajowhite;
+  background-color: black;
+  margin: 10px;
+  text-align: center;
+}
+
+.exercise-figure {
+  margin: 20px;
+  text-align: center;
+  display: block;
+}
+
+.link {font-size: 20px;
+  color: teal;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+body {
+  height: 3000px;
+}
+
+.close-button {
+  font-size: 22px;
+  background-color: black;
+  color: white;
+  padding: 7px 16px;
+  border-radius: 100%;
+  position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+.square {
+  background-color: chocolate;
+  width: 320px;
+  height: 180px;
+  position: fixed;
+    bottom: 15px;
+    right: 10px;
+}
+
+.time {
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  padding: 2px 3px;
+  position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
