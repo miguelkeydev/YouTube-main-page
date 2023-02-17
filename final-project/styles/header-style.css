@@ -6,6 +6,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
   display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,6 +19,7 @@ header {
 
 .header-left_menu, .header-left_youtube-logo {
   height: 20px;
+  cursor: pointer;
 }
 
 .header-left_menu {
@@ -47,12 +49,44 @@ header {
   font-family: Roboto, Arial;
 }
 
+.search-bar {
+  font-size: 18px;
+  margin-left: 0;
+}
+
 .header-middle_search-button {
   background-color: rgb(243, 243, 243);
   width: 60px;
   height: 40px;
   border: 1px solid rgb(190, 190, 190);
   margin: 0 10px 0 -1px;
+}
+
+.header-middle_search-button, .header-middle_voice-search-button, .header-right_upload-container, .header-right_notification-container, .header-right_channel-pic-container {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-middle_search-button .tooltip, .header-middle_voice-search-button .tooltip, .header-right_upload-container .tooltip, .header-right_notification-container .tooltip {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  background-color: gray;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: .15s;
+  pointer-events: none;
+  white-space: nowrap;
+  position: absolute;
+    bottom: -25px;
+}
+
+.header-middle_search-button:hover .tooltip, .header-middle_voice-search-button:hover .tooltip, .header-right_upload-container:hover .tooltip, .header-right_notification-container:hover .tooltip {
+  opacity: 1;
 }
 
 .header-middle_voice-search-button {
@@ -63,14 +97,8 @@ header {
   border-radius: 100%;
 }
 
-.header-middle_search-button__pic {
+.header-middle_search-button__pic, .header-middle_voice-search-button__pic {
   height: 70%;
-  margin-top: 4px;
-}
-
-.header-middle_voice-search-button__pic {
-  height: 70%;
-  margin-top: 2px;
 }
 
 .header-right {
@@ -81,20 +109,23 @@ header {
     flex-shrink: 0;
 }
 
-.header-right_upload {
+.header-right_upload, .header-right_notification {
   height: 26px;
 }
 
-.header-right_notification {
-  height: 26px;
+.header-right_notification-number {
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 100%;
+  background-color: rgb(194, 0, 0);
+  color: white;
+  position: absolute;
+    top: -2px;
+    right: -5px;
 }
 
 .header-right_channel-pic {
   height: 35px;
   border-radius: 100%;
-}
-
-.search-bar {
-  font-size: 18px;
-  margin-left: 0;
 }
