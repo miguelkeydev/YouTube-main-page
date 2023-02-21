@@ -35,7 +35,7 @@
 .div-9c {
   border: 1px solid rgba(128, 128, 128, .6);
   padding: 15px 15px;
-  width: 35vw;
+  width: 315px;
   margin: 10px auto;
 }
 
@@ -53,7 +53,7 @@
   background-color: rgb(29, 28, 28);
   color: white;
   padding: 15px 15px;
-  width: 38.5vw;
+  width: 350px;
   margin: 10px auto;
 }
 
@@ -65,11 +65,12 @@
 
 .div-9d_text {
   font-size: 14px;
+  color: rgb(138, 138, 138);
 }
 
 .div-9e {
   padding: 5px 10px;
-  width: 50vw;
+  width: 700px;
   border: 1px solid rgba(128, 128, 128, .6);
   border-radius: 10px;
   margin: 10px auto;
@@ -92,7 +93,7 @@
 
 .div-9e_textbox {
   font-size: 17px;
-  width: 30vw;
+  width: 520px;
   border: none;
 }
 

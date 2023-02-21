@@ -18,7 +18,7 @@
 }
 
 .email-textbox {
-  width: 47vw;
+  width: 300px;
   height: 25px;
   border: 1px solid black;
   border-radius: 3px;
@@ -28,7 +28,7 @@
 .agree-button {
   color: white;
   background-color: rgb(67, 117, 226);
-  padding: 10px 17vw;
+  padding: 10px 112px;
   border: none;
   border-radius: 25px;
   margin: 10px 0 10px 3px;
