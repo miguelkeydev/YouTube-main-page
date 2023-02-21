@@ -5,9 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Youtube Clone</title>
+  <!--Adding 'Roboto' google font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!--Adding different stylesheets for every part of the project-->
   <link rel="stylesheet" href="./styles/general-style.css">
   <link rel="stylesheet" href="./styles/header-style.css">
   <link rel="stylesheet" href="./styles/sidebar.css">
@@ -15,37 +17,45 @@
 </head>
 <body>
   <header>
-    <div class="header-left">
+    <div class="header-left"> <!--Implementing the left part of the header-->
       <img class="header-left_menu" src="./images/icons/hamburguer-icon.png" alt="Hamburguer Menu icon">
-      <img class="header-left_youtube-logo" src="./images/icons/YouTube-logo.png" alt="Youtube Logo">
+      <!--Link to redirect to YouTube when clicking on the YouTube logo-->
+      <a class="header-left_link" href="https://www.youtube.com">
+        <img class="header-left_youtube-logo" src="./images/icons/YouTube-logo.png" alt="Youtube Logo">
+      </a>
     </div>
-    <div class="header-middle">
+    <div class="header-middle"> <!--Implementing the middle part of the header-->
       <input class="header-middle_search-bar" type="text" placeholder="Search">
       <button class="header-middle_search-button">
         <img class="header-middle_search-button__pic" src="./images/icons/search-icon.svg" alt="Magnifying Glass Icon">
+        <!--Implementing a tooltip for the Search Button-->
         <div class="tooltip">
           Search
         </div>
       </button>
       <button class="header-middle_voice-search-button">
         <img class="header-middle_voice-search-button__pic" src="./images/icons/microphone-icon.png" alt="Microphone Icon">
+        <!--Implementing a tooltip for the Voice Search Button-->
         <div class="tooltip">
           Search with your voice
         </div>
       </button>
     </div>
-    <div class="header-right">
+    <div class="header-right"> <!--Implementing the right part of the header-->
       <div class="header-right_upload-container">
         <img class="header-right_upload" src="./images/icons/upload-icon.png" alt="Upload icon">
+        <!--Implementing a tooltip for the Upload Button-->
         <div class="tooltip">
           Upload a video
         </div>
       </div>
       <div class="header-right_notification-container">
         <img class="header-right_notification" src="./images/icons/notification-icon.svg" alt="Notification Bell icon">
+        <!--Adding a number of notifications for the Notification Button-->
         <div class="header-right_notification-number">
           7
         </div>
+        <!--Implementing a tooltip for the Notification Button-->
         <div class="tooltip">
           Notifications
         </div>
@@ -55,63 +65,73 @@
       </div>
     </div>
   </header>
-
-  <aside>
-    <div class="aside-link">
+    <!--Implementing a Sidebar on the left of the page-->
+  <nav> 
+    <div class="nav-link">
       <img src="./images/icons/home.svg" alt="Youtube Home Icon">
-      <div class="aside-link_text">
+      <div class="nav-link_text">
         Home
       </div>
     </div>
-    <div class="aside-link">
+    <div class="nav-link">
       <img src="./images/icons/explore.svg" alt="Youtube Explore Icon">      
-      <div class="aside-link_text">
+      <div class="nav-link_text">
         Explore
       </div>
     </div>
-    <div class="aside-link">
+    <div class="nav-link">
       <img src="./images/icons/subscriptions.svg" alt="Youtube Subsciptions Icon">        
-      <div class="aside-link_text">
+      <div class="nav-link_text">
         Subsciptions
       </div>
     </div>
-    <div class="aside-link">
+    <div class="nav-link">
       <img src="./images/icons/originals.svg" alt="Youtube Originals Icon">        
-      <div class="aside-link_text">
+      <div class="nav-link_text">
         Originals
       </div>
     </div>
-    <div class="aside-link">
+    <div class="nav-link">
       <img src="./images/icons/youtube-music.svg" alt="Youtube Music Icon">        
-      <div class="aside-link_text">
+      <div class="nav-link_text">
         Youtube Music
       </div>
     </div>
-    <div class="aside-link">
+    <div class="nav-link">
       <img src="./images/icons/library.svg" alt="Youtube Library Icon">        
-      <div class="aside-link_text">
+      <div class="nav-link_text">
         Library
       </div>
     </div>
-  </aside>
-
+  </nav>
+    <!--Implementing the main content of the page(videos).-->
   <main>
-    <div class="video-grid">
+    <!--Creating a GRID to show the videos organizedly-->
+    <section class="video-grid">
+      <!--Principal container of a video-->
       <div class="video">
+        <!--Adding a hyperlink to redirect to the video-->
         <a class="video-link" href="https://www.youtube.com/watch?v=qU9mHegkTc4">
+          <!--Horizontal layout to show the Video Image-->
           <div class="video-thumbnail">
               <figure class="video-figure">
                 <img class="video-image" src="./images/thumbnails/thumbnail-1.jpg" alt="Favourite Worst Nightmare Album Cover">
+                <!--Setting the duration of the video-->
                 <div class="video-time">
                   4:14
                 </div>
               </figure>
           </div>
+          <!--Horizontal layout to show the Video Info-->
           <div class="video-info">
+            <!--Vertical layout to show the Channel Image-->
             <div class="video-channel">
               <img class="video-channel_pic" src="./images/channel-pics/channel-1.jpg" alt="Arctic Monkeys Channel Picture">
+              <!--Adding extra Channel Info when the mouse hovers over the channel picture-->
               <div class="video-channel_info">
+                <!--Vertical layout to show the Channel Picture-->
                 <img class="video-channel_info-pic" src="./images/channel-pics/channel-1.jpg" alt="Arctic Monkeys Channel Picture">
+                <!--Vertical layout to show Channel Info-->
                 <div class="video-channel_info-channel">
                   <p class="channel-name">
                     Official Arctic Monkeys &#9834;
@@ -122,6 +142,7 @@
                 </div>
               </div>
             </div>
+            <!--Horizontaal layout to show the Video Info-->
             <div class="video-additional_info">
               <p class="video-title">
                 505
@@ -137,21 +158,30 @@
         </a>
       </div>
     
+      <!--Principal container of a video-->
       <div class="video">
+        <!--Adding a hyperlink to redirect to the video-->
         <a class="video-link" href="https://www.youtube.com/watch?v=eKL3TceSxvk">
+          <!--Horizontal layout to show the Video Image-->
           <div class="video-thumbnail">
             <figure class="video-figure">
               <img class="video-image" src="./images/thumbnails/thumbnail-2.jpg" alt="Romantic Suicide Song Cover">
+              <!--Setting the duration of the video-->
               <div class="video-time">
                 2:31
               </div>
             </figure>
           </div>
+          <!--Horizontal layout to show the Video Info-->
           <div class="video-info">
+            <!--Vertical layout to show the Channel Image-->
             <div class="video-channel">
               <img class="video-channel_pic" src="./images/channel-pics/channel-2.jpg" alt="d4vd Channel Picture">
+              <!--Adding extra Channel Info when the mouse hovers over the channel picture-->
               <div class="video-channel_info">
+                <!--Vertical layout to show the Channel Picture-->
                 <img class="video-channel_info-pic" src="./images/channel-pics/channel-2.jpg" alt="d4vd Channel Picture">
+                <!--Vertical layout to show Channel Info-->
                 <div class="video-channel_info-channel">
                   <p class="channel-name">
                     d4vd &#9834;
@@ -162,6 +192,7 @@
                 </div>
               </div>
             </div>
+            <!--Horizontaal layout to show the Video Info-->
             <div class="video-additional_info">
               <p class="video-title">
                 d4vd - Romantic Homicide (Official Music Video)
@@ -176,31 +207,41 @@
         </a>
       </div>
     
+      <!--Principal container of a video-->
       <div class="video">
+        <!--Adding a hyperlink to redirect to the video-->
         <a class="video-link" href="https://www.youtube.com/watch?v=9NGI_CoH2-4">
+          <!--Horizontal layout to show the Video Image-->
           <div class="video-thumbnail">
             <figure class="video-figure">
               <img class="video-image" src="./images/thumbnails/thumbnail-3.jpg" alt="Come Over When You're sober Part 2 Album Cover">
+              <!--Setting the duration of the video-->
               <div class="video-time">
                 3:27
               </div>
             </figure>
           </div>
+          <!--Horizontal layout to show the Video Info-->
           <div class="video-info">
+            <!--Vertical layout to show the Channel Image-->
             <div class="video-channel">
-                <img class="video-channel_pic" src="./images/channel-pics/channel-3.jpg" alt="Lil Peep Channel Picture">
-                <div class="video-channel_info">
-                  <img class="video-channel_info-pic" src="./images/channel-pics/channel-3.jpg" alt="Lil Peep Channel Picture">
-                  <div class="video-channel_info-channel">
-                    <p class="channel-name">
-                      Lil Peep &#9834;
-                    </p>
-                    <p class="channel-subscribers">
-                      8.32M subscribers
-                    </p>
-                  </div>
+              <img class="video-channel_pic" src="./images/channel-pics/channel-3.jpg" alt="Lil Peep Channel Picture">
+              <!--Adding extra Channel Info when the mouse hovers over the channel picture-->
+              <div class="video-channel_info">
+                <!--Vertical layout to show the Channel Picture-->
+                <img class="video-channel_info-pic" src="./images/channel-pics/channel-3.jpg" alt="Lil Peep Channel Picture">
+                <!--Vertical layout to show Channel Info-->
+                <div class="video-channel_info-channel">
+                  <p class="channel-name">
+                    Lil Peep &#9834;
+                  </p>
+                  <p class="channel-subscribers">
+                    8.32M subscribers
+                  </p>
                 </div>
+              </div>
             </div>
+            <!--Horizontaal layout to show the Video Info-->
             <div class="video-additional_info">
               <p class="video-title">
                 Leanin'
@@ -214,21 +255,30 @@
         </a>
       </div>
     
+      <!--Principal container of a video-->
       <div class="video">
+        <!--Adding a hyperlink to redirect to the video-->
         <a class="video-link" href="https://youtu.be/G3e-cpL7ofc">
+          <!--Horizontal layout to show the Video Image-->
           <div class="video-thumbnail">
             <figure class="video-figure">
               <img class="video-image" src="./images/thumbnails/thumbnail-4.jpg" alt="HTML and CSS languages logos, a sign that says 'Full Course', and a man smiling">
+              <!--Setting the duration of the video-->
               <div class="video-time">
                 6:31:23
               </div>
             </figure>
           </div>
+          <!--Horizontal layout to show the Video Info-->
           <div class="video-info">
+            <!--Vertical layout to show the Channel Image-->
             <div class="video-channel">
               <img class="video-channel_pic" src="./images/channel-pics/channel-4.jpg" alt="SuperSimpleDev Channel Picture">
+              <!--Adding extra Channel Info when the mouse hovers over the channel picture-->
               <div class="video-channel_info">
+                <!--Vertical layout to show the Channel Picture-->
                 <img class="video-channel_info-pic" src="./images/channel-pics/channel-4.jpg" alt="SuperSimpleDev Channel Picture">
+                <!--Vertical layout to show Channel Info-->
                 <div class="video-channel_info-channel">
                   <p class="channel-name">
                     SuperSimpleDev
@@ -239,6 +289,7 @@
                 </div>
               </div>
             </div>
+            <!--Horizontaal layout to show the Video Info-->
             <div class="video-additional_info">
               <p class="video-title">
                 HTML & CSS Full Course - Beginner to Pro
@@ -253,31 +304,41 @@
         </a>
       </div>
     
+      <!--Principal container of a video-->
       <div class="video">
+        <!--Adding a hyperlink to redirect to the video-->
         <a class="video-link" href="https://youtu.be/rL_vk6fxCxY">
+          <!--Horizontal layout to show the Video Image-->
           <div class="video-thumbnail">
             <figure class="video-figure">
               <img class="video-image" src="./images/thumbnails/thumbnail-5.jpg" alt="The Wild Project Episode 189 cover">
+              <!--Setting the duration of the video-->
               <div class="video-time">
                 3:01:24
               </div>
             </figure>
           </div>
+          <!--Horizontal layout to show the Video Info-->
           <div class="video-info">
+            <!--Vertical layout to show the Channel Image-->
             <div class="video-channel">
-                <img class="video-channel_pic" src="./images/channel-pics/channel-5.jpg" alt="The Wild Project Channel Picture">
-                <div class="video-channel_info">
-                  <img class="video-channel_info-pic" src="./images/channel-pics/channel-5.jpg" alt="The Wild Project Channel Picture">
-                  <div class="video-channel_info-channel">
-                    <p class="channel-name">
-                      The Wild Project
-                    </p>
-                    <p class="channel-subscribers">
-                      3.54M subscribers
-                    </p>
-                  </div>
+              <img class="video-channel_pic" src="./images/channel-pics/channel-5.jpg" alt="The Wild Project Channel Picture">
+              <!--Adding extra Channel Info when the mouse hovers over the channel picture-->
+              <div class="video-channel_info">
+                <!--Vertical layout to show the Channel Picture-->
+                <img class="video-channel_info-pic" src="./images/channel-pics/channel-5.jpg" alt="The Wild Project Channel Picture">
+                <!--Vertical layout to show Channel Info-->
+                <div class="video-channel_info-channel">
+                  <p class="channel-name">
+                    The Wild Project
+                  </p>
+                  <p class="channel-subscribers">
+                    3.54M subscribers
+                  </p>
                 </div>
+              </div>
             </div>
+            <!--Horizontaal layout to show the Video Info-->
             <div class="video-additional_info">
               <p class="video-title">
                 The Wild Project #189 ft Sandra Estok | Un criminal le rob&#243; su identidad durante 6 a&#241;os
@@ -293,21 +354,30 @@
         </a>
       </div>
     
+      <!--Principal container of a video-->
       <div class="video">
+        <!--Adding a hyperlink to redirect to the video-->
         <a class="video-link" href="https://youtu.be/SYa8EHschyg">
+          <!--Horizontal layout to show the Video Image-->
           <div class="video-thumbnail">
             <figure class="video-figure">
               <img class="video-image" src="./images/thumbnails/thumbnail-6.jpg" alt="A Yazidi girl">
+              <!--Setting the duration of the video-->
               <div class="video-time">
                 19:48
               </div>
             </figure>
           </div>
+          <!--Horizontal layout to show the Video Info-->
           <div class="video-info">
+            <!--Vertical layout to show the Channel Image-->
             <div class="video-channel">
               <img class="video-channel_pic" src="./images/channel-pics/channel-6.jpg" alt="Lethal Crysis Channel Picture">
+              <!--Adding extra Channel Info when the mouse hovers over the channel picture-->
               <div class="video-channel_info">
+                <!--Vertical layout to show the Channel Picture-->
                 <img class="video-channel_info-pic" src="./images/channel-pics/channel-6.jpg" alt="ethal Crysis Channel Picture">
+                <!--Vertical layout to show Channel Info-->
                 <div class="video-channel_info-channel">
                   <p class="channel-name">
                     Lethal Crysis
@@ -318,6 +388,7 @@
                 </div>
               </div>
             </div>
+            <!--Horizontaal layout to show the Video Info-->
             <div class="video-additional_info">
               <p class="video-title">
                 El infierno yazidi: 3.000 mujeres secuestradas por ISIS
@@ -331,7 +402,307 @@
           </div>
         </a>
       </div>
-    </div>
+
+      <!--Principal container of a video-->
+      <div class="video">
+        <!--Adding a hyperlink to redirect to the video-->
+        <a class="video-link" href="https://www.youtube.com/watch?v=2fwMRpSY_NU">
+          <!--Horizontal layout to show the Video Image-->
+          <div class="video-thumbnail">
+            <figure class="video-figure">
+              <img class="video-image" src="./images/thumbnails/thumbnail-7.jpg" alt="Maldini looking at the camera, the clubs that are going to play the Champions League, and a text that says 'Previa y Pronósticos'">
+              <!--Setting the duration of the video-->
+              <div class="video-time">
+                11:54
+              </div>
+            </figure>
+          </div>
+          <!--Horizontal layout to show the Video Info-->
+          <div class="video-info">
+            <!--Vertical layout to show the Channel Image-->
+            <div class="video-channel">
+              <img class="video-channel_pic" src="./images/channel-pics/channel-7.jpg" alt="Mundo Maldini Channel Picture">
+              <!--Adding extra Channel Info when the mouse hovers over the channel picture-->
+              <div class="video-channel_info">
+                <!--Vertical layout to show the Channel Picture-->
+                <img class="video-channel_info-pic" src="./images/channel-pics/channel-7.jpg" alt="Mundo Maldini Channel Picture">
+                <!--Vertical layout to show Channel Info-->
+                <div class="video-channel_info-channel">
+                  <p class="channel-name">
+                    Mundo Maldini
+                  </p>
+                  <p class="channel-subscribers">
+                    964K subscribers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Horizontaal layout to show the Video Info-->
+            <div class="video-additional_info">
+              <p class="video-title">
+                LIVERPOOL-REAL MADRID, PREVIA Y PRONÓSTICO CHAMPIONS. EINTRACHT-NÁPOLES, INTER-OPORTO, LEIPZIG-CITY
+              </p>
+              <p class="video-author">
+                Mundo Maldini &#10004;
+              </p>
+              <p class="video-stats">
+                8321 views &#183; 1 hour ago
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!--Principal container of a video-->
+      <div class="video">
+        <!--Adding a hyperlink to redirect to the video-->
+        <a class="video-link" href="https://www.youtube.com/watch?v=iogcY_4xGjo">
+          <!--Horizontal layout to show the Video Image-->
+          <div class="video-thumbnail">
+            <figure class="video-figure">
+              <img src="./images/thumbnails/thumbnail-8.jpg" alt="Mr. Beast surprising on the left, a golden ferrari in the middle, and a luxurious mansion in the background" class="video-image">
+              <!--Setting the duration of the video-->
+              <div class="video-time">
+                15:41
+              </div>
+            </figure>
+          </div>
+          <!--Horizontal layout to show the Video Info-->
+          <div class="video-info">
+            <!--Vertical layout to show the Channel Image-->
+            <div class="video-channel">
+              <img class="video-channel_pic" src="./images/channel-pics/channel-8.jpg" alt="Mr. Beast Channel Picture">
+              <!--Adding extra Channel Info when the mouse hovers over the channel picture-->
+              <div class="video-channel_info">
+                <!--Vertical layout to show the Channel Picture-->
+                <img class="video-channel_info-pic" src="./images/channel-pics/channel-8.jpg" alt="Mr. Beast Channel Picture">
+                <!--Vertical layout to show Channel Info-->
+                <div class="video-channel_info-channel">
+                  <p class="channel-name">
+                    MrBeast &#10004;
+                  </p>
+                  <p class="channel-subscribers">
+                    134M subscribers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Horizontaal layout to show the Video Info-->
+            <div class="video-additional_info">
+              <p class="video-title">
+                ¡Cuarto de Hotel de $1 vs $1,000,000!
+              </p>
+              <p class="video-author">
+                MrBeast &#10004;
+              </p>
+              <p class="video-stats">
+                169M views &#183; 3 months ago
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!--Principal container of a video-->
+      <div class="video">
+        <!--Adding a hyperlink to redirect to the video-->
+        <a class="video-link" href="https://www.youtube.com/watch?v=l7a3_MZR_hk">
+          <!--Horizontal layout to show the Video Image-->
+          <div class="video-thumbnail">
+            <figure class="video-figure">
+              <img class="video-image" src="./images/thumbnails/thumbnail-9.jpg" alt="A football player opening his arms">
+              <!--Setting the duration of the video-->
+              <div class="video-time">
+                4:51
+              </div>
+            </figure>
+          </div>
+          <!--Horizontal layout to show the Video Info-->
+          <div class="video-info">
+            <!--Vertical layout to show the Channel Image-->
+            <div class="video-channel">
+              <img class="video-channel_pic" src="./images/channel-pics/channel-9.jpg" alt="ESPN Fans Channel Picture">
+              <!--Adding extra Channel Info when the mouse hovers over the channel picture-->
+              <div class="video-channel_info">
+                <!--Vertical layout to show the Channel Picture-->
+                <img class="video-channel_info-pic" src="./images/channel-pics/channel-9.jpg" alt="ESPN Fans Channel Picture">
+                <!--Vertical layout to show Channel Info-->
+                <div class="video-channel_info-channel">
+                  <p class="channel-name">
+                    ESPN Fans &#10004;
+                  </p>
+                  <p class="channel-subscribers">
+                    4.89M Subscribers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Horizontaal layout to show the Video Info-->
+            <div class="video-additional_info">
+              <p class="video-title">
+                ¡DE LA MANO DEL TORO MARTÍNEZ, EL NEROAZZURRO ES ÚNICO ESCOLTA! | Inter 3-1 Udinese | RESUMEN
+              </p>
+              <p class="video-author">
+                ESPN Fans &#10004;
+              </p>
+              <p class="video-stats">
+                99.040 views &#183; 2 days ago
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!--Principal container of a video-->
+      <div class="video">
+        <!--Adding a hyperlink to redirect to the video-->
+        <a class="video-link" href="https://www.youtube.com/watch?v=tpol12kcMl0">
+          <!--Horizontal layout to show the Video Image-->
+          <div class="video-thumbnail">
+            <figure class="video-figure">
+              <img class="video-image" src="./images/thumbnails/thumbnail-10.jpg" alt="A drawing of a person smoking">
+              <!--Setting the duration of the video-->
+              <div class="video-time">
+                5:13
+              </div>
+            </figure>
+          </div>
+          <!--Horizontal layout to show the Video Info-->
+          <div class="video-info">
+            <!--Vertical layout to show the Channel Image-->
+            <div class="video-channel">
+              <img class="video-channel_pic" src="./images/channel-pics/channel-10.jpg" alt="TED-Ed Español Channel Picture">
+              <!--Adding extra Channel Info when the mouse hovers over the channel picture-->
+              <div class="video-channel_info">
+                <!--Vertical layout to show the Channel Picture-->
+                <img class="video-channel_info-pic" src="./images/channel-pics/channel-10.jpg" alt="TED-Ed Español Channel Picture">
+                <!--Vertical layout to show Channel Info-->
+                <div class="video-channel_info-channel">
+                  <p class="channel-name">
+                    TED-Ed Espa&#241;ol
+                  </p>
+                  <p class="channel-subscribers">
+                    927K subscribers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Horizontaal layout to show the Video Info-->
+            <div class="video-additional_info">
+              <p class="video-title">
+                Cómo afectan los cigarrillos al cuerpo - Krishna Sudhir
+              </p>
+              <p class="video-author">
+                TED-Ed Espa&#241;ol
+              </p>
+              <p class="video-stats">
+                289.346 views &#183; 6 months ago
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!--Principal container of a video-->
+      <div class="video">
+        <!--Adding a hyperlink to redirect to the video-->
+        <a class="video-link" href="https://www.youtube.com/watch?v=9eHVePFkcBo">
+          <!--Horizontal layout to show the Video Image-->
+          <div class="video-thumbnail">
+            <figure class="video-figure">
+              <img class="video-image" src="./images/thumbnails/thumbnail-11.jpg" alt="A man thinking and a UFO, a hot air balloon, and a dron in the background">
+              <!--Setting the duration of the video-->
+              <div class="video-time">
+                22:48
+              </div>
+            </figure>
+          </div>
+          <!--Horizontal layout to show the Video Info-->
+          <div class="video-info">
+            <!--Vertical layout to show the Channel Image-->
+            <div class="video-channel">
+              <img class="video-channel_pic" src="./images/channel-pics/channel-11.jpg" alt="Platzi Channel Picture">
+              <!--Adding extra Channel Info when the mouse hovers over the channel picture-->
+              <div class="video-channel_info">
+                <!--Vertical layout to show the Channel Picture-->
+                <img class="video-channel_info-pic" src="./images/channel-pics/channel-11.jpg" alt="Platzi Channel Picture">
+                <!--Vertical layout to show Channel Info-->
+                <div class="video-channel_info-channel">
+                  <p class="channel-name">
+                    Platzi &#10004;
+                  </p>
+                  <p class="channel-subscribers">
+                    1.65M subscribers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Horizontaal layout to show the Video Info-->
+            <div class="video-additional_info">
+              <p class="video-title">
+                Qué son los ovnis, drones, globos y otros objetos voladores sobre Estados Unidos
+              </p>
+              <p class="video-author">
+                Platzi &#10004;
+              </p>
+              <p class="video-stats">
+                115.172 views &#183; 2 days ago
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!--Principal container of a video-->
+      <div class="video">
+        <!--Adding a hyperlink to redirect to the video-->
+        <a class="video-link" href="https://www.youtube.com/watch?v=edR8MF-B5J4">
+          <!--Horizontal layout to show the Video Image-->
+          <div class="video-thumbnail">
+            <figure class="video-figure">
+              <img class="video-image" src="./images/thumbnails/thumbnail-12.jpg" alt="A robot with a text that says 'EL PROYECTO PROTEUS'">
+              <!--Setting the duration of the video-->
+              <div class="video-time">
+                12:53
+              </div>
+            </figure>
+          </div>
+          <!--Horizontal layout to show the Video Info-->
+          <div class="video-info">
+            <!--Vertical layout to show the Channel Image-->
+            <div class="video-channel">
+              <img class="video-channel_pic" src="./images/channel-pics/channel-12.jpg" alt="El Robot de Platón Channel Picture">
+              <!--Adding extra Channel Info when the mouse hovers over the channel picture-->
+              <div class="video-channel_info">
+                <!--Vertical layout to show the Channel Picture-->
+                <img class="video-channel_info-pic" src="./images/channel-pics/channel-12.jpg" alt="Platzi Channel Picture">
+                <!--Vertical layout to show Channel Info-->
+                <div class="video-channel_info-channel">
+                  <p class="channel-name">
+                    El Robot de Platón &#10004;
+                  </p>
+                  <p class="channel-subscribers">
+                    2.62M subscribers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Horizontaal layout to show the Video Info-->
+            <div class="video-additional_info">
+              <p class="video-title">
+                ¿Por qué No Conquistamos el Océano?
+              </p>
+              <p class="video-author">
+                El Robot de Platón &#10004;
+              </p>
+              <p class="video-stats">
+                24.769 views &#183; 2 hours ago
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
   </main>
 </body>
 </html>

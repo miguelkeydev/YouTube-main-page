@@ -1,4 +1,4 @@
-aside {
+nav {
   background-color: white;
   width: 72px;
   padding-top: 5px;
@@ -10,7 +10,8 @@ aside {
     z-index: 11;
 }
 
-.aside-link {
+.nav-link {
+  font-weight: 500;
   height: 80px;
   cursor: pointer;
   display: flex;
@@ -20,15 +21,31 @@ aside {
     gap: 5px;
 }
 
-.aside-link:hover {
+.nav-link:hover {
   background-color: rgb(230, 230, 230);
 }
 
-.aside-link img {
+.nav-link img {
   height: 25px;
 }
 
-.aside-link div {
-  font-family: Roboto, Arial;
+.nav-link div {
   font-size: 10px;
+}
+
+@media (min-width: 1200px) {
+  nav {
+    width: 250px;
+    padding: 10px 0 0 30px;
+  }
+  .nav-link {
+    height: 50px;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .nav-link div {
+    font-size: 14px;
+  }
 }

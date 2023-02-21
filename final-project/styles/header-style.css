@@ -17,7 +17,7 @@ header {
     align-items: center;
 }
 
-.header-left_menu, .header-left_youtube-logo {
+.header-left_menu, .header-left_link, .header-left_youtube-logo {
   height: 20px;
   cursor: pointer;
 }
@@ -71,7 +71,7 @@ header {
 }
 
 .header-middle_search-button .tooltip, .header-middle_voice-search-button .tooltip, .header-right_upload-container .tooltip, .header-right_notification-container .tooltip {
-  font-family: Roboto, Arial;
+  
   font-size: 12px;
   background-color: gray;
   color: white;
@@ -114,7 +114,7 @@ header {
 }
 
 .header-right_notification-number {
-  font-family: Roboto, Arial;
+  
   font-size: 11px;
   padding: 3px 6px;
   border-radius: 100%;
