@@ -2,22 +2,22 @@ header {
   background-color: white;
   height: 55px;
   border-bottom: 1px solid rgb(230, 230, 230);
-  position: fixed;
+  position: fixed; /*Making the header sitcked*/
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 1; /*Relevance to be behid the sidebar*/
   display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.header-left {
+.header-left { /*Hamburguer menu and YouTube logo*/
   display: flex;
     align-items: center;
 }
 
-.header-left_menu, .header-left_link, .header-left_youtube-logo {
+.header-left_menu, .header-left_link, .header-left_youtube-logo { /*Making the header sections the same height*/
   height: 20px;
   cursor: pointer;
 }
@@ -27,26 +27,26 @@ header {
 }
 
 .header-middle {
-  flex: 1;
-  max-width: 1000px;
+  flex: 1; /*This section will take the remaining width of the page*/
+  max-width: 1000px; /*If the page grows enough, this section will be maximum 1000px width*/
   margin: 0 45px 0 90px;
   display: flex;
     align-items: center;
 }
 
 .header-middle_search-bar {
-  font-size: 16px;
+  font-size: 16px; /*The placeholder will have this font-size*/
   width: 0;
   height: 40px;
   padding-left: 20px;
   border: 1px solid rgb(190, 190, 190);
   border-radius: 2px;
   box-shadow: inset 1px 2px 5px rgba(0, 0, 0, .05);
-  flex: 1;
+  flex: 1; /*This search-bar will take the remaining width of the section*/
 }
 
 .header-middle_search-bar::placeholder {
-  font-family: Roboto, Arial;
+  font-family: Roboto, Arial; /*The placeholder will have this font-family*/
 }
 
 .search-bar {
@@ -60,33 +60,6 @@ header {
   height: 40px;
   border: 1px solid rgb(190, 190, 190);
   margin: 0 10px 0 -1px;
-}
-
-.header-middle_search-button, .header-middle_voice-search-button, .header-right_upload-container, .header-right_notification-container, .header-right_channel-pic-container {
-  cursor: pointer;
-  position: relative;
-  display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-middle_search-button .tooltip, .header-middle_voice-search-button .tooltip, .header-right_upload-container .tooltip, .header-right_notification-container .tooltip {
-  
-  font-size: 12px;
-  background-color: gray;
-  color: white;
-  padding: 3px 6px;
-  border-radius: 2px;
-  opacity: 0;
-  transition: .15s;
-  pointer-events: none;
-  white-space: nowrap;
-  position: absolute;
-    bottom: -25px;
-}
-
-.header-middle_search-button:hover .tooltip, .header-middle_voice-search-button:hover .tooltip, .header-right_upload-container:hover .tooltip, .header-right_notification-container:hover .tooltip {
-  opacity: 1;
 }
 
 .header-middle_voice-search-button {
@@ -106,15 +79,18 @@ header {
   display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-shrink: 0;
+    flex-shrink: 0; /*When the page becomes thinner, the elements between this container won't shrink*/
 }
 
 .header-right_upload, .header-right_notification {
   height: 26px;
 }
 
+.header-right_notification-container { /*Making this container relative to add a Notification Number on top of this one*/
+  position: relative;
+}
+
 .header-right_notification-number {
-  
   font-size: 11px;
   padding: 3px 6px;
   border-radius: 100%;
@@ -128,4 +104,33 @@ header {
 .header-right_channel-pic {
   height: 35px;
   border-radius: 100%;
+}
+
+.header-middle_search-button, .header-middle_voice-search-button, .header-right_upload-container, .header-right_notification-container, .header-right_channel-pic-container {
+  cursor: pointer;
+  display: flex; /*To center the images inside*/
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip {
+  font-size: 12px;
+  background-color: gray;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 2px;
+  opacity: 0; /*Making them invisible for now*/
+  transition: .15s; /*Adding a transition to make it more natural*/
+  pointer-events: none; /*Disabling events to not activate them when hover over*/
+  /*white-space: nowrap;*/
+  position: absolute; /*To accomodate them better*/
+    bottom: -25px; /*To accomodate them below*/
+}
+
+.header-right_notification-container .tooltip { /*Accomodating better this tooltip because the notification number modifies the position of this tooltip*/
+  bottom: -39px;
+}
+
+.header-middle_search-button:hover .tooltip, .header-middle_voice-search-button:hover .tooltip, .header-right_upload-container:hover .tooltip, .header-right_notification-container:hover .tooltip { /*Activating the tooltips when the mouse hovers over the icons*/
+  opacity: 1;
 }

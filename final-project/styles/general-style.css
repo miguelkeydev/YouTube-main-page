@@ -1,16 +1,16 @@
-* {
+* { /*Reseting some User Agent Styles*/
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Roboto, Arial;
-  padding: 55px 0 0 72px;
+body { 
+  font-family: Roboto, Arial; /*Setting the same Font-Size for all the web page*/
+  padding: 55px 0 0 72px; /*Padding to give space for Header and Sidebar*/
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) { /*When the screen wide is 1200px or more*/
   body {
-    padding-left: 250px;
+    padding-left: 250px; /*Padding to give space for the wider Sidebar*/
   }
 }

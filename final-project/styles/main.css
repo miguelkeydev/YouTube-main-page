@@ -3,19 +3,18 @@ main {
   padding: 16px 14px;
 }
 
-.video-grid {
+.video-grid { /*Creating a grid to organize the videos*/
   padding: 10px;
   display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /*Setting 3 rows of the same width*/
     gap: 35px 16px;
 }
 
 .video-link {
   text-decoration: none;
-  color: black;
 }
 
-.video-link:active {
+.video-link, .video-link:active {
   color: black;
 }
 
@@ -23,7 +22,7 @@ main {
   width: 100%;
 }
 
-.video-figure {
+.video-figure { /*Making the figures able to have elements on top*/
   position: relative;
 }
 
@@ -34,7 +33,7 @@ main {
   color: white;
   padding: 2px 3px;
   border-radius: 5px;
-  position: absolute;
+  position: absolute; /*Making this element able to be on top of its container*/
     right: 7px;
     bottom: 10px;
 }
@@ -48,7 +47,7 @@ main {
 .video-channel {
   width: 50px;
   height: 35px;
-  position: relative;
+  position: relative; /*Making this container relative to add a Tooltip*/
 }
 
 .video-channel_pic {
@@ -69,7 +68,7 @@ main {
   position: absolute;
     bottom: -70px;
     left: 0;
-    z-index: 2;
+    z-index: 2; /*To stay on top of the info container*/
   display: flex;
     align-items: center;
 }
@@ -80,14 +79,14 @@ main {
 }
 
 .video-channel_info-channel {
-  height: 37px;
+  height: 40px;
   padding-left: 10px;
   display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.video-channel:hover .video-channel_info {
+.video-channel:hover .video-channel_info { /*When the mouse hovers over the Video Channel container, the Video Channel Info container will be shown*/
   opacity: 1;
 }
 
@@ -104,13 +103,13 @@ main {
 .video-additional_info {
   flex: 1;
   position: relative;
-    z-index: 1;
+    z-index: 1; /*To be behind the Video Channel Info container*/
 }
 
 .video-title {
   font-size: 15px;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 22px; /*To control the space between the lines*/
 }
 
 .video-author, .video-stats {
@@ -126,13 +125,13 @@ main {
   padding-top: 5px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 750px) { /*When the size is 750px or less wide*/
   .video-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1080px) {/*When the size is 1080px or more wide*/
   .video-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

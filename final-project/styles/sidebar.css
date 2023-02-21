@@ -3,11 +3,11 @@ nav {
   width: 72px;
   padding-top: 5px;
   border-top: 1px solid white;
-  position: fixed;
+  position: fixed; /*Making the sidebar sticked*/
     left: 0;
     bottom: 0;
     top: 54px;
-    z-index: 11;
+    z-index: 2; /*Relevance to be over the header*/
 }
 
 .nav-link {
@@ -33,16 +33,16 @@ nav {
   font-size: 10px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) { /*When the page is 1200px or more wide*/
   nav {
-    width: 250px;
+    width: 250px; /*The sidebar will be wider*/
     padding: 10px 0 0 30px;
   }
   .nav-link {
     height: 50px;
     flex-direction: row;
-    justify-content: start;
-    gap: 20px;
+      justify-content: start;
+      gap: 20px;
   }
 
   .nav-link div {
